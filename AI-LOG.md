@@ -27,7 +27,7 @@ Implement `cartTotal(items, options)` according to the README specification. The
 
 - **Initial test run:** The development commit history records that the tests were initially failing before implementation. See commit `e5c94c1` (`Step 3a: tests written from the spec (red)`). This documents the development sequence; it is not a substitute for a saved test-run log.
 - **Final `npm run check`:** Passed in the final local verification, with all 17 tests passing and the format check succeeding.
-- **GitHub Actions CI:** [Replace with the actual status and run URL, or write `Not run` if CI has not been run.]
+- **GitHub Actions CI:** Passed. The latest run, [CI #3 — Update submission reports](https://github.com/TruongMinhHuy/24127404_wad-cart-ia1/actions), completed successfully on the `main` branch in 10 seconds.
 
 ## Git commit evidence
 
