@@ -55,6 +55,11 @@ test('a non-integer quantity throws RangeError', () => {
   assert.throws(() => cartTotal(one(1000, 1.5), options), RangeError)
 })
 
+test('a NaN quantity throws RangeError', () => {
+  assert.throws(() => cartTotal(one(1000, NaN), options), RangeError)
+})
+
+
 test('a negative quantity throws RangeError', () => {
   assert.throws(() => cartTotal(one(1000, -2), options), RangeError)
 })
@@ -62,4 +67,20 @@ test('a negative quantity throws RangeError', () => {
 test('one bad item among good ones still throws', () => {
   const items = [...one(1000), ...one(-5)]
   assert.throws(() => cartTotal(items, options), RangeError)
+})
+test('a NaN price throws RangeError', () => {
+  assert.throws(() => cartTotal(one(NaN), options), RangeError)
+})
+
+test('a price given as a string throws RangeError', () => {
+  assert.throws(() => cartTotal(one('1000'), options), RangeError)
+})
+
+test('a quantity given as a string throws RangeError', () => {
+  assert.throws(() => cartTotal(one(1000, '2'), options), RangeError)
+})
+
+test('a price of 0 is allowed', () => {
+  // 0 + VAT 0 + shipping 30000
+  assert.equal(cartTotal(one(0), options), 30000)
 })
