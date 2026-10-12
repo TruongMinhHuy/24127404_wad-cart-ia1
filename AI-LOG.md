@@ -29,10 +29,9 @@ Implement `cartTotal(items, options)` from the README spec, with a harness first
 - Did you change anything (names, error messages, a test)? Which line, why?
 - Did you reject anything the assistant suggested? What and why?
 - Which part did you write by hand? (If none, say "none" — that costs no marks.)
--->
-- Changed: (fill in, or "nothing")
-- Rejected: (fill in, or "nothing")
-- Written by hand: (fill in, or "nothing")
+- Changed: nothing. I read src/cart.js and the tests line by line and ran npm run check myself (12 tests pass).
+- Rejected: nothing.
+- Written by hand: nothing. Claude wrote the code; I read it and can explain it.
 
 ## What I verified myself
 - Ran `npm test` before any code: red, `not implemented`.
